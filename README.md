@@ -48,6 +48,7 @@ git -C .claude/skills/<nome-da-skill> pull     # projeto
 | Skill | O que faz | Página | Download |
 |-------|-----------|--------|----------|
 | **Prompt Improver** | Avalia a clareza dos seus prompts e, quando estão vagos, pesquisa o contexto do projeto e faz perguntas estruturadas antes de executar. | [📄 Ver página](https://samuelasantos.github.io/claude-skills/skills/prompt-improver.html) | [⬇ Repositório](https://github.com/severity1/claude-code-prompt-improver) |
+| **Humanizer** | Remove sinais de escrita gerada por IA do seu texto. Detecta e corrige 33 padrões — vocabulário inflado, em-dashes, finais de chatbot e mais — tornando o resultado naturalmente humano. | [📄 Ver página](https://samuelasantos.github.io/claude-skills/skills/humanizer.html) | [⬇ Repositório](https://github.com/blader/humanizer) |
 
 > Este catálogo cresce com o tempo — novas skills são adicionadas aqui e ganham uma página própria no site.
 

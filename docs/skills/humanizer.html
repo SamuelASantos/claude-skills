@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Humanizer — Claude Skills</title>
+  <meta name="description" content="Skill que remove sinais de escrita gerada por IA do seu texto, tornando-o mais natural e humano. Detecta e corrige 33 padrões baseados no guia do Wikipedia.">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>✦</text></svg>">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="../index.html">
+        <span class="spark">✦</span>
+        claude-skills<span class="tld">.catalog</span>
+      </a>
+      <nav class="header-nav">
+        <a href="../index.html#skills" class="nav-label">Skills</a>
+        <a class="btn-gh" href="https://github.com/SamuelASantos/claude-skills" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+          GitHub
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <nav class="breadcrumb">
+        <a href="../index.html">← Voltar ao catálogo</a>
+      </nav>
+
+      <!-- Nome + Resumo -->
+      <section class="skill-hero">
+        <div>
+          <h1><span class="grad">Humanizer</span></h1>
+          <p class="summary">
+            Remove os sinais de escrita gerada por IA do seu texto, tornando-o mais natural
+            e humano. Detecta e corrige 33 padrões identificados pelo guia do Wikipedia
+            "Signs of AI Writing" — de vocabulário inflado e dashes excessivos até finais
+            de chatbot e regras de três. Suporta também calibração de voz: forneça uma
+            amostra da sua escrita e a skill imita seu estilo pessoal.
+          </p>
+          <div class="badges">
+            <span class="badge accent">✦ por blader</span>
+            <span class="badge violet">v2.8.0</span>
+            <span class="badge cyan">33 padrões</span>
+            <span class="badge">Licença MIT</span>
+          </div>
+        </div>
+        <div class="art">
+          <img src="../assets/img/humanizer.svg" alt="Ilustração: texto com IA-isms sendo transformado em escrita natural e humana pela skill Humanizer">
+        </div>
+      </section>
+
+      <!-- Download -->
+      <section class="section" id="download">
+        <h2><span class="num">↓</span> Baixar e instalar</h2>
+        <p>Instalação <strong>global</strong> (disponível em todos os seus projetos):</p>
+        <div class="code-block">
+          <div class="code-head">
+            <span>bash · instalação global</span>
+            <button class="copy-btn">⧉ Copiar</button>
+          </div>
+          <pre>git clone https://github.com/blader/humanizer.git ~/.claude/skills/humanizer</pre>
+        </div>
+
+        <p>Ou instalação <strong>apenas no projeto atual</strong> (execute na raiz do projeto):</p>
+        <div class="code-block">
+          <div class="code-head">
+            <span>bash · instalação no projeto</span>
+            <button class="copy-btn">⧉ Copiar</button>
+          </div>
+          <pre>git clone https://github.com/blader/humanizer.git .claude/skills/humanizer</pre>
+        </div>
+
+        <div class="callout">
+          <span class="ico">💡</span>
+          <span>No <strong>Windows</strong>, o <code>~</code> equivale a <code>%USERPROFILE%</code>
+          (ex.: <code>C:\Users\seu-usuario\.claude\skills\humanizer</code>).
+          Após instalar, reinicie o Claude Code para a skill ser carregada.
+          A skill também é compatível com o <strong>OpenCode</strong> — instale em
+          <code>~/.config/opencode/skills/humanizer</code> ou reutilize a pasta
+          <code>~/.claude/skills/</code>, que o OpenCode já escaneia.</span>
+        </div>
+
+        <a class="source-link" href="https://github.com/blader/humanizer" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+          Repositório original no GitHub
+        </a>
+      </section>
+
+      <!-- Funcionalidades -->
+      <section class="section" id="funcionalidades">
+        <h2><span class="num">⚙</span> Funcionalidades</h2>
+        <p>
+          A skill analisa o texto fornecido e aplica um processo de três etapas:
+          <strong>identificação de padrões</strong>, <strong>reescrita</strong> e uma
+          <strong>segunda auditoria</strong> para capturar "AI-isms" residuais que passaram
+          na primeira passagem. Os 33 padrões detectados estão organizados em quatro categorias:
+        </p>
+
+        <div class="feature-grid">
+          <div class="feature">
+            <h4>Padrões de conteúdo</h4>
+            <p>Inflação de significância, citações superficiais de notoriedade, linguagem promocional, atribuições vagas ("especialistas acreditam") e conclusões genéricas ("o futuro parece brilhante").</p>
+          </div>
+          <div class="feature">
+            <h4>Padrões de linguagem</h4>
+            <p>Vocabulário típico de IA (<em>testament, landscape, showcasing, additionally</em>), evitação de cópula (<em>serves as</em> → <em>is</em>), "regra de três", ciclagem de sinônimos e paralelismos negativos.</p>
+          </div>
+          <div class="feature">
+            <h4>Padrões de estilo</h4>
+            <p>Em/en dashes excessivos, negrito exagerado, listas com cabeçalho inline, títulos em Title Case, emojis, aspas curvas, pares hifenizados desnecessários e frases de impacto fabricadas.</p>
+          </div>
+          <div class="feature">
+            <h4>Padrões de comunicação</h4>
+            <p>Artefatos de chatbot (<em>I hope this helps!</em>), disclaimers de corte de conhecimento, tom sycophantic (<em>Great question!</em>), frases de preenchimento e hedging excessivo.</p>
+          </div>
+          <div class="feature">
+            <h4>Calibração de voz</h4>
+            <p>Forneça 2–3 parágrafos da sua própria escrita e a skill analisa seu ritmo, escolhas de palavras e tiques verbais — reescrevendo no seu estilo pessoal, não em um "humano genérico".</p>
+          </div>
+          <div class="feature">
+            <h4>Auditoria dupla</h4>
+            <p>Após a primeira reescrita, a skill faz uma segunda passagem buscando por "obviamente gerado por IA" — garantindo que padrões sutis não escapem pela primeira revisão.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dicas -->
+      <section class="section" id="dicas">
+        <h2><span class="num">★</span> Dicas</h2>
+        <ul class="tip-list">
+          <li><span class="ico">✍</span><span><strong>Preserve o conteúdo, não corte:</strong> a skill reescreve sem deletar — se o original tem cinco parágrafos, o resultado também tem cinco. Ótimo para textos longos onde você não quer perder cobertura.</span></li>
+          <li><span class="ico">🎭</span><span><strong>Calibração de voz é o diferencial:</strong> sem calibração, o resultado soa "humano genérico". Com uma amostra de 2–3 parágrafos seus, o resultado soa como <em>você</em> — ideal para posts, e-mails e docs de times.</span></li>
+          <li><span class="ico">🔍</span><span><strong>Baseado no Wikipedia:</strong> os padrões vêm do guia <a href="https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing" target="_blank" rel="noopener">Signs of AI Writing</a>, mantido pelo WikiProject AI Cleanup com base em milhares de instâncias reais de texto gerado por IA.</span></li>
+          <li><span class="ico">⚡</span><span><strong>Segunda auditoria incluída:</strong> a versão 2.2.0+ adiciona uma passagem extra de "obviamente gerado por IA" — útil para textos que precisam passar por revisão humana rigorosa ou detectores de IA.</span></li>
+          <li><span class="ico">🧩</span><span><strong>Compatível com OpenCode:</strong> instale em <code>~/.claude/skills/humanizer</code> e ambas as ferramentas reconhecem a skill automaticamente — sem instalação dupla.</span></li>
+        </ul>
+      </section>
+
+      <!-- Uso na prática -->
+      <section class="section" id="uso">
+        <h2><span class="num">▶</span> Uso na prática</h2>
+        <p>Use <code>/humanizer</code> e cole o texto a ser reescrito:</p>
+
+        <div class="code-block">
+          <div class="code-head"><span>claude code · uso básico</span><button class="copy-btn">⧉ Copiar</button></div>
+          <pre>/humanizer
+
+In today's rapidly evolving technological landscape, this groundbreaking
+tool—nestled at the intersection of research and practice—serves as an
+enduring testament to the transformative potential of AI. Additionally,
+it showcases innovation, inspiration, and insights. I hope this helps!</pre>
+        </div>
+
+        <p>Para calibrar com seu estilo pessoal, forneça uma amostra antes do texto a humanizar:</p>
+
+        <div class="code-block">
+          <div class="code-head"><span>claude code · calibração de voz</span><button class="copy-btn">⧉ Copiar</button></div>
+          <pre>/humanizer
+
+Aqui está uma amostra da minha escrita para calibração:
+[cole 2–3 parágrafos seus aqui]
+
+Agora humanize este texto:
+[cole o texto gerado por IA aqui]</pre>
+        </div>
+
+        <div class="example-pair">
+          <div class="vague">
+            <div class="label">⚠ Antes (gerado por IA)</div>
+            <div class="code-block">
+              <div class="code-head"><span>texto original</span></div>
+              <pre>At its core, the value proposition is clear:
+streamlining processes, enhancing collaboration,
+and fostering alignment—not just about
+autocomplete; it's about unlocking creativity
+at scale. 🚀 The future looks bright!</pre>
+            </div>
+          </div>
+          <div class="clear">
+            <div class="label">✔ Depois (humanizado)</div>
+            <div class="code-block">
+              <div class="code-head"><span>texto humanizado</span></div>
+              <pre>It helps with the boring parts. You write less
+boilerplate, collaboration gets easier when
+everyone has the same context, and decisions
+happen faster. The risk is that it also makes
+it easier to ship half-baked ideas.</pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout">
+          <span class="ico">🎓</span>
+          <span><strong>Quando essa skill brilha:</strong> relatórios e documentações técnicas geradas por
+          IA que precisam soar como escrita humana, posts de blog, e-mails formais, textos de
+          marketing e qualquer conteúdo que passará por revisão editorial ou detectores de IA.</span>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>✦ claude-skills · <span data-year></span></span>
+      <span>Feito com <a href="https://claude.com/claude-code" target="_blank" rel="noopener">Claude Code</a> · <a href="https://github.com/SamuelASantos/claude-skills" target="_blank" rel="noopener">Contribua no GitHub</a></span>
+    </div>
+  </footer>
+
+  <script src="../assets/site.js"></script>
+</body>
+</html>
