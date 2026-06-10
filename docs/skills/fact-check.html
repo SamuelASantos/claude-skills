@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fact-Check — Claude Skills</title>
+  <meta name="description" content="Skill de verificação de fatos, detecção de desinformação e letramento midiático. Pipeline de 11 etapas com SIFT, CRAAP, pontuação MFS, busca multi-idioma e cards HTML visuais.">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>✦</text></svg>">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="../index.html">
+        <span class="spark">✦</span>
+        claude-skills<span class="tld">.catalog</span>
+      </a>
+      <nav class="header-nav">
+        <a href="../index.html#skills" class="nav-label">Skills</a>
+        <a class="btn-gh" href="https://github.com/SamuelASantos/claude-skills" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+          GitHub
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <nav class="breadcrumb">
+        <a href="../index.html">← Voltar ao catálogo</a>
+      </nav>
+
+      <!-- Nome + Resumo -->
+      <section class="skill-hero">
+        <div>
+          <h1><span class="grad">Fact-Check</span></h1>
+          <p class="summary">
+            Sistema semi-automatizado de verificação de fatos, detecção de desinformação
+            e letramento midiático. Gera cards HTML visuais com veredicto, pontuação MFS
+            (Manipulation &amp; Falsehood Score), credibilidade de fontes e componente
+            educacional. Combina a metodologia SIFT, o teste CRAAP e ciência de prebunking
+            em um pipeline de 11 etapas com busca multi-idioma e rastreamento de origem.
+          </p>
+          <div class="badges">
+            <span class="badge accent">✦ por petar-nauka</span>
+            <span class="badge violet">v2.1</span>
+            <span class="badge cyan">11 etapas</span>
+            <span class="badge cyan">4 modos</span>
+            <span class="badge">Licença MIT</span>
+          </div>
+        </div>
+        <div class="art">
+          <img src="../assets/img/fact-check.svg" alt="Ilustração: pipeline de verificação de fatos com claim de entrada, análise SIFT/CRAAP/MFS no centro e card de veredicto na saída">
+        </div>
+      </section>
+
+      <!-- Download -->
+      <section class="section" id="download">
+        <h2><span class="num">↓</span> Baixar e instalar</h2>
+        <p>Instalação <strong>global</strong> (disponível em todos os seus projetos):</p>
+        <div class="code-block">
+          <div class="code-head">
+            <span>bash · instalação global</span>
+            <button class="copy-btn">⧉ Copiar</button>
+          </div>
+          <pre>git clone https://github.com/petar-nauka/fact-check-skill.git ~/.claude/skills/fact-check</pre>
+        </div>
+
+        <p>Ou instalação <strong>apenas no projeto atual</strong> (execute na raiz do projeto):</p>
+        <div class="code-block">
+          <div class="code-head">
+            <span>bash · instalação no projeto</span>
+            <button class="copy-btn">⧉ Copiar</button>
+          </div>
+          <pre>git clone https://github.com/petar-nauka/fact-check-skill.git .claude/skills/fact-check</pre>
+        </div>
+
+        <p>Para usar no <strong>Claude.ai</strong>, faça upload do arquivo <code>fact-check.skill</code> nas configurações de skills — sem necessidade do Claude Code:</p>
+        <div class="code-block">
+          <div class="code-head">
+            <span>bash · baixar o arquivo .skill para Claude.ai</span>
+            <button class="copy-btn">⧉ Copiar</button>
+          </div>
+          <pre>curl -LO https://github.com/petar-nauka/fact-check-skill/raw/main/fact-check.skill</pre>
+        </div>
+
+        <div class="callout">
+          <span class="ico">💡</span>
+          <span>No <strong>Windows</strong>, o <code>~</code> equivale a <code>%USERPROFILE%</code>
+          (ex.: <code>C:\Users\seu-usuario\.claude\skills\fact-check</code>).
+          O repositório inclui dois arquivos essenciais — <code>SKILL.md</code> e
+          <code>educational-tips.md</code> — e o <code>git clone</code> baixa ambos automaticamente.
+          Após instalar, reinicie o Claude Code para a skill ser carregada.</span>
+        </div>
+
+        <a class="source-link" href="https://github.com/petar-nauka/fact-check-skill" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+          Repositório original no GitHub
+        </a>
+      </section>
+
+      <!-- Funcionalidades -->
+      <section class="section" id="funcionalidades">
+        <h2><span class="num">⚙</span> Funcionalidades</h2>
+        <p>
+          A skill recebe uma afirmação (texto, URL ou imagem), executa um
+          <strong>pipeline de 11 etapas</strong> — decomposição de afirmação, busca multi-idioma,
+          leitura lateral, rastreamento de origem, detecção de sinais de alerta e pontuação MFS
+          — e entrega um card HTML completo com veredicto, fontes avaliadas e lição educacional.
+        </p>
+
+        <div class="feature-grid">
+          <div class="feature">
+            <h4>Pipeline de 11 etapas</h4>
+            <p>Decompõe a afirmação em sub-alegações verificáveis, busca fontes em múltiplos idiomas, aplica leitura lateral (protocolo Stanford COR 2023), rastreia a origem do conteúdo e detecta 40+ sinais de alerta em 6 categorias.</p>
+          </div>
+          <div class="feature">
+            <h4>4 modos de operação</h4>
+            <p><strong>Standard</strong> (card HTML completo), <strong>Comparação</strong> (dois artigos/URLs lado a lado), <strong>Prebunking</strong> (briefing de narrativas falsas ativas sobre um tema) e <strong>Verificação Rápida</strong> (resposta texto, sem HTML).</p>
+          </div>
+          <div class="feature">
+            <h4>Score MFS</h4>
+            <p>Manipulation &amp; Falsehood Score: fórmula ponderada de 3 componentes — CFS (50%), MTS (30%) e SCD (20%) — com escala de 6 níveis de 0 a 100: Confiável → Enganoso → Desinformação.</p>
+          </div>
+          <div class="feature">
+            <h4>Componente educacional</h4>
+            <p>Ensina o usuário a verificar por conta própria: mini-aulas de reconhecimento de técnicas de manipulação, protocolo de leitura lateral e 5 perguntas essenciais para avaliar qualquer fonte.</p>
+          </div>
+          <div class="feature">
+            <h4>Multi-idioma</h4>
+            <p>Busca fontes no idioma mais relevante para a afirmação: inglês, idioma local e idioma de origem do conteúdo. Suporte nativo a inglês, búlgaro e russo, com adaptação para outros idiomas por inferência.</p>
+          </div>
+          <div class="feature">
+            <h4>Output HTML + fallback</h4>
+            <p>Cards visuais com tema dark/light, responsivos, compatíveis com impressão e WCAG AA. No Claude.ai sem acesso à web, opera em modo fallback com conhecimento interno e sinaliza explicitamente a limitação.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dicas -->
+      <section class="section" id="dicas">
+        <h2><span class="num">★</span> Dicas</h2>
+        <ul class="tip-list">
+          <li><span class="ico">📋</span><span><strong>Contexto completo acelera o rastreamento:</strong> ao verificar um post viral, cole o texto integral (incluindo cabeçalho, data visível e URL de origem, se houver) — quanto mais contexto, mais preciso o rastreamento de origem na Etapa 4.</span></li>
+          <li><span class="ico">⚖</span><span><strong>Modo Comparação é automático:</strong> não é preciso especificar o modo — passe dois URLs ou dois blocos de texto com linguagem comparativa ("compare estas fontes", "qual é mais confiável") e a skill detecta a intenção e usa o Modo 2.</span></li>
+          <li><span class="ico">🛡</span><span><strong>Prebunking antes de eventos críticos:</strong> "Quais falsas narrativas circulam sobre as eleições em X?" ou "Que desinformações existem sobre Y?" ativam o Modo 3 — receba um briefing preventivo das campanhas de desinformação ativas antes que cheguem até você.</span></li>
+          <li><span class="ico">⚡</span><span><strong>Verificação rápida para perguntas diretas:</strong> para verificações urgentes, faça uma pergunta direta ("É verdade que X?") — a skill detecta automaticamente e usa o Modo 4: resposta em texto sem gerar HTML, mais rápido para decisões no momento.</span></li>
+          <li><span class="ico">🌐</span><span><strong>Funciona no Claude.ai sem ferramentas web:</strong> sem acesso a ferramentas de busca, a skill usa conhecimento interno e indica explicitamente quando está em modo fallback — útil para verificações rápidas de afirmações históricas ou científicas consolidadas.</span></li>
+        </ul>
+      </section>
+
+      <!-- Uso na prática -->
+      <section class="section" id="uso">
+        <h2><span class="num">▶</span> Uso na prática</h2>
+        <p>Invoque com <code>/fact-check</code> e forneça o conteúdo a verificar — a skill detecta o modo automaticamente:</p>
+
+        <div class="code-block">
+          <div class="code-head"><span>claude code · verificação de post viral</span><button class="copy-btn">⧉ Copiar</button></div>
+          <pre>/fact-check
+
+Vi este post circulando no WhatsApp:
+"URGENTE: O governo vai bloquear transferências PIX acima de R$ 200 a
+partir de julho. Compartilhe antes que apaguem! Fonte: Banco Central"
+
+É verdade?</pre>
+        </div>
+
+        <p>Para comparar dois artigos sobre o mesmo tema:</p>
+
+        <div class="code-block">
+          <div class="code-head"><span>claude code · modo comparação</span><button class="copy-btn">⧉ Copiar</button></div>
+          <pre>/fact-check
+
+Compare estas duas coberturas sobre os efeitos da cafeína na saúde:
+https://exemplo-site-1.com/artigo-cafeina
+https://exemplo-site-2.com/estudo-cafeina
+
+Qual é mais confiável?</pre>
+        </div>
+
+        <p>Para receber um briefing de desinformações ativas antes de um evento:</p>
+
+        <div class="code-block">
+          <div class="code-head"><span>claude code · modo prebunking</span><button class="copy-btn">⧉ Copiar</button></div>
+          <pre>/fact-check
+
+Quais falsas narrativas estão circulando atualmente sobre vacinas
+contra a gripe no Brasil? Quero me preparar para identificá-las.</pre>
+        </div>
+
+        <div class="example-pair">
+          <div class="vague">
+            <div class="label">⚠ Claim recebida</div>
+            <div class="code-block">
+              <div class="code-head"><span>input</span></div>
+              <pre>"A NASA confirmou que haverá 3 dias de
+escuridão total em dezembro de 2026.
+Cientistas pediram para estocar alimentos
+e velas. COMPARTILHE ANTES QUE DELETEM!"</pre>
+            </div>
+          </div>
+          <div class="clear">
+            <div class="label">✔ Output do card HTML</div>
+            <div class="code-block">
+              <div class="code-head"><span>veredicto gerado</span></div>
+              <pre>✗ FALSO — Confiança: 96%
+MFS Score: 82/100 (Desinformação)
+
+Sinais de alerta: urgência artificial,
+apelo emocional, autoridade falsa (NASA),
+chamada para compartilhar antes de "deletar"
+
+Fontes verificadas: nasa.gov (9.1★),
+snopes.com (8.8★), sciencealert.com (8.5★)</pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout">
+          <span class="ico">🎓</span>
+          <span><strong>Quando essa skill brilha:</strong> verificação de posts virais de WhatsApp e redes sociais,
+          avaliação de fontes antes de compartilhar notícias, comparação de coberturas midiáticas divergentes,
+          prebunking antes de eleições ou eventos de saúde pública, e qualquer situação em que você quer
+          entender <em>por que</em> algo é falso — não apenas receber um veredicto.</span>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>✦ claude-skills · <span data-year></span></span>
+      <span>Feito com <a href="https://claude.com/claude-code" target="_blank" rel="noopener">Claude Code</a> · <a href="https://github.com/SamuelASantos/claude-skills" target="_blank" rel="noopener">Contribua no GitHub</a></span>
+    </div>
+  </footer>
+
+  <script src="../assets/site.js"></script>
+</body>
+</html>

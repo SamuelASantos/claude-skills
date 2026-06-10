@@ -23,4 +23,13 @@ const SKILLS = [
     repo: "https://github.com/blader/humanizer",
     added: "2026-06-10",
   },
+  {
+    slug: "fact-check",
+    name: "Fact-Check",
+    summary:
+      "Verifica afirmações, detecta desinformação e ensina letramento midiático. Pipeline de 11 etapas com SIFT, CRAAP, pontuação MFS e busca multi-idioma — gera cards HTML com veredicto, fontes avaliadas e componente educacional.",
+    tags: ["fact-checking", "desinformação", "mídia"],
+    repo: "https://github.com/petar-nauka/fact-check-skill",
+    added: "2026-06-10",
+  },
 ];

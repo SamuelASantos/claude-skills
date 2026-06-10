@@ -1,0 +1,196 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,-apple-system,sans-serif">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#38d4f0"/>
+    </linearGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="#0a0d14"/>
+
+  <!-- Dot grid (manual sparse pattern) -->
+  <g fill="#1a2030" opacity="0.6">
+    <circle cx="25" cy="25" r="0.7"/><circle cx="55" cy="25" r="0.7"/><circle cx="85" cy="25" r="0.7"/>
+    <circle cx="115" cy="25" r="0.7"/><circle cx="145" cy="25" r="0.7"/><circle cx="175" cy="25" r="0.7"/>
+    <circle cx="205" cy="25" r="0.7"/><circle cx="235" cy="25" r="0.7"/><circle cx="265" cy="25" r="0.7"/>
+    <circle cx="295" cy="25" r="0.7"/><circle cx="325" cy="25" r="0.7"/><circle cx="355" cy="25" r="0.7"/>
+    <circle cx="385" cy="25" r="0.7"/><circle cx="415" cy="25" r="0.7"/><circle cx="445" cy="25" r="0.7"/>
+    <circle cx="475" cy="25" r="0.7"/><circle cx="505" cy="25" r="0.7"/><circle cx="535" cy="25" r="0.7"/>
+    <circle cx="565" cy="25" r="0.7"/><circle cx="595" cy="25" r="0.7"/><circle cx="625" cy="25" r="0.7"/>
+    <circle cx="655" cy="25" r="0.7"/><circle cx="685" cy="25" r="0.7"/><circle cx="715" cy="25" r="0.7"/>
+    <circle cx="745" cy="25" r="0.7"/><circle cx="775" cy="25" r="0.7"/>
+    <circle cx="25" cy="55" r="0.7"/><circle cx="55" cy="55" r="0.7"/><circle cx="85" cy="55" r="0.7"/>
+    <circle cx="115" cy="55" r="0.7"/><circle cx="145" cy="55" r="0.7"/><circle cx="175" cy="55" r="0.7"/>
+    <circle cx="205" cy="55" r="0.7"/><circle cx="235" cy="55" r="0.7"/><circle cx="265" cy="55" r="0.7"/>
+    <circle cx="295" cy="55" r="0.7"/><circle cx="325" cy="55" r="0.7"/><circle cx="355" cy="55" r="0.7"/>
+    <circle cx="385" cy="55" r="0.7"/><circle cx="415" cy="55" r="0.7"/><circle cx="445" cy="55" r="0.7"/>
+    <circle cx="475" cy="55" r="0.7"/><circle cx="505" cy="55" r="0.7"/><circle cx="535" cy="55" r="0.7"/>
+    <circle cx="565" cy="55" r="0.7"/><circle cx="595" cy="55" r="0.7"/><circle cx="625" cy="55" r="0.7"/>
+    <circle cx="655" cy="55" r="0.7"/><circle cx="685" cy="55" r="0.7"/><circle cx="715" cy="55" r="0.7"/>
+    <circle cx="745" cy="55" r="0.7"/><circle cx="775" cy="55" r="0.7"/>
+    <circle cx="25" cy="425" r="0.7"/><circle cx="55" cy="425" r="0.7"/><circle cx="85" cy="425" r="0.7"/>
+    <circle cx="115" cy="425" r="0.7"/><circle cx="385" cy="425" r="0.7"/><circle cx="415" cy="425" r="0.7"/>
+    <circle cx="585" cy="425" r="0.7"/><circle cx="655" cy="425" r="0.7"/><circle cx="775" cy="425" r="0.7"/>
+  </g>
+
+  <!-- ═══ LEFT CARD: CLAIM INPUT ═══ -->
+  <rect x="28" y="62" width="218" height="316" rx="10" fill="#0c1018" stroke="#1e2840" stroke-width="1.5"/>
+  <!-- Warning header -->
+  <rect x="28" y="62" width="218" height="38" rx="10" fill="#18100a"/>
+  <rect x="28" y="86" width="218" height="14" fill="#18100a"/>
+  <!-- Warning icon + label -->
+  <text x="47" y="88" font-size="13" fill="#ef8354">⚠</text>
+  <text x="67" y="88" font-size="10" fill="#ef8354" font-weight="600" letter-spacing="0.8">ALEGAÇÃO</text>
+  <!-- viral badge -->
+  <rect x="191" y="71" width="42" height="20" rx="10" fill="#ef8354" fill-opacity="0.12" stroke="#ef8354" stroke-width="0.8"/>
+  <text x="212" y="85" text-anchor="middle" font-size="9" fill="#ef8354" font-weight="600">viral</text>
+
+  <!-- Text lines -->
+  <rect x="43" y="115" width="188" height="7" rx="3" fill="#1a2535"/>
+  <rect x="43" y="130" width="165" height="7" rx="3" fill="#1a2535"/>
+  <rect x="43" y="145" width="180" height="7" rx="3" fill="#1a2535"/>
+  <rect x="43" y="160" width="142" height="7" rx="3" fill="#1a2535"/>
+
+  <!-- Divider -->
+  <line x1="43" y1="182" x2="231" y2="182" stroke="#1e2840" stroke-width="1"/>
+
+  <!-- Avatar + source -->
+  <circle cx="58" cy="200" r="11" fill="#1a2535"/>
+  <text x="58" y="204" text-anchor="middle" font-size="10" fill="#a78bfa" font-weight="600">f</text>
+  <rect x="78" y="194" width="100" height="6" rx="3" fill="#1a2535"/>
+  <rect x="78" y="206" width="68" height="5" rx="2" fill="#1a2535" fill-opacity="0.55"/>
+
+  <!-- More dimmer lines -->
+  <rect x="43" y="226" width="180" height="7" rx="3" fill="#1a2535" fill-opacity="0.5"/>
+  <rect x="43" y="241" width="152" height="7" rx="3" fill="#1a2535" fill-opacity="0.5"/>
+  <rect x="43" y="256" width="174" height="7" rx="3" fill="#1a2535" fill-opacity="0.5"/>
+
+  <!-- Divider -->
+  <line x1="43" y1="276" x2="231" y2="276" stroke="#1e2840" stroke-width="1"/>
+
+  <!-- Command block -->
+  <rect x="43" y="284" width="188" height="76" rx="6" fill="#080c14" stroke="#1e2840" stroke-width="1"/>
+  <text x="53" y="303" font-size="9" fill="#38d4f0" fill-opacity="0.85">/fact-check</text>
+  <rect x="53" y="310" width="135" height="5" rx="2" fill="#38d4f0" fill-opacity="0.12"/>
+  <rect x="53" y="320" width="108" height="5" rx="2" fill="#38d4f0" fill-opacity="0.09"/>
+  <rect x="53" y="330" width="122" height="5" rx="2" fill="#38d4f0" fill-opacity="0.07"/>
+  <rect x="53" y="340" width="95" height="5" rx="2" fill="#38d4f0" fill-opacity="0.05"/>
+
+  <!-- Arrow left → center -->
+  <line x1="249" y1="220" x2="296" y2="220" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="5,3" stroke-opacity="0.6"/>
+  <polygon points="296,215 308,220 296,225" fill="#a78bfa" fill-opacity="0.6"/>
+
+  <!-- ═══ CENTER: ANALYSIS ═══ -->
+  <!-- Ambient glow -->
+  <ellipse cx="400" cy="218" rx="90" ry="90" fill="url(#centerGlow)"/>
+
+  <!-- Shield outline -->
+  <path d="M400,140 L450,163 L450,215 Q450,254 400,272 Q350,254 350,215 L350,163 Z"
+        fill="none" stroke="url(#shieldGrad)" stroke-width="2.5" stroke-opacity="0.9"/>
+  <!-- Shield fill -->
+  <path d="M400,144 L446,166 L446,215 Q446,251 400,267 Q354,251 354,215 L354,166 Z"
+        fill="#0c1018"/>
+
+  <!-- Magnifying glass -->
+  <circle cx="393" cy="208" r="23" fill="none" stroke="#38d4f0" stroke-width="2.5" stroke-opacity="0.9"/>
+  <line x1="410" y1="225" x2="423" y2="238" stroke="#38d4f0" stroke-width="3" stroke-linecap="round" stroke-opacity="0.9"/>
+  <!-- Check inside magnifier -->
+  <path d="M383,208 L390,215 L404,201" fill="none" stroke="#38d4f0" stroke-width="2.5"
+        stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/>
+
+  <!-- ANÁLISE label -->
+  <text x="400" y="132" text-anchor="middle" font-size="9" fill="#3a4d5e" letter-spacing="2" font-weight="500">ANÁLISE</text>
+
+  <!-- Method badges -->
+  <!-- SIFT (top-left) -->
+  <rect x="304" y="146" width="58" height="22" rx="4" fill="#0e1430" stroke="#a78bfa" stroke-width="1" stroke-opacity="0.65"/>
+  <text x="333" y="161" text-anchor="middle" font-size="10" fill="#a78bfa" font-weight="600">SIFT</text>
+  <line x1="362" y1="157" x2="354" y2="167" stroke="#a78bfa" stroke-width="1" stroke-opacity="0.35"/>
+
+  <!-- CRAAP (top-right) -->
+  <rect x="438" y="146" width="60" height="22" rx="4" fill="#0e1430" stroke="#c084fc" stroke-width="1" stroke-opacity="0.65"/>
+  <text x="468" y="161" text-anchor="middle" font-size="10" fill="#c084fc" font-weight="600">CRAAP</text>
+  <line x1="438" y1="157" x2="446" y2="167" stroke="#c084fc" stroke-width="1" stroke-opacity="0.35"/>
+
+  <!-- MFS (bottom-left) -->
+  <rect x="304" y="260" width="54" height="22" rx="4" fill="#0e1430" stroke="#38d4f0" stroke-width="1" stroke-opacity="0.65"/>
+  <text x="331" y="275" text-anchor="middle" font-size="10" fill="#38d4f0" font-weight="600">MFS</text>
+  <line x1="358" y1="260" x2="367" y2="252" stroke="#38d4f0" stroke-width="1" stroke-opacity="0.35"/>
+
+  <!-- 11 ETAPAS (bottom-right) -->
+  <rect x="442" y="260" width="68" height="22" rx="4" fill="#0e1430" stroke="#38d4f0" stroke-width="1" stroke-opacity="0.65"/>
+  <text x="476" y="275" text-anchor="middle" font-size="10" fill="#38d4f0" font-weight="600">11 etapas</text>
+  <line x1="442" y1="260" x2="434" y2="252" stroke="#38d4f0" stroke-width="1" stroke-opacity="0.35"/>
+
+  <!-- Arrow center → right -->
+  <line x1="492" y1="220" x2="539" y2="220" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="5,3" stroke-opacity="0.6"/>
+  <polygon points="539,215 551,220 539,225" fill="#a78bfa" fill-opacity="0.6"/>
+
+  <!-- ═══ RIGHT CARD: VERDICT ═══ -->
+  <rect x="554" y="62" width="218" height="316" rx="10" fill="#0c1018" stroke="#1e2840" stroke-width="1.5"/>
+  <!-- FALSO header -->
+  <rect x="554" y="62" width="218" height="38" rx="10" fill="#18080a"/>
+  <rect x="554" y="86" width="218" height="14" fill="#18080a"/>
+  <text x="572" y="88" font-size="12" fill="#ef8354" font-weight="700">✗ FALSO</text>
+  <rect x="690" y="70" width="66" height="21" rx="10" fill="#ef8354" fill-opacity="0.12" stroke="#ef8354" stroke-width="0.8"/>
+  <text x="723" y="85" text-anchor="middle" font-size="9" fill="#ef8354" font-weight="600">92% conf.</text>
+
+  <!-- Confidence bar -->
+  <text x="572" y="117" font-size="8.5" fill="#3a4d5e" letter-spacing="0.5">CONFIANÇA</text>
+  <rect x="572" y="121" width="186" height="6" rx="3" fill="#1a2535"/>
+  <rect x="572" y="121" width="171" height="6" rx="3" fill="#ef8354" fill-opacity="0.78"/>
+
+  <!-- MFS Score block -->
+  <rect x="572" y="139" width="186" height="27" rx="5" fill="#0a0f18" stroke="#1e2840" stroke-width="1"/>
+  <text x="583" y="156" font-size="8.5" fill="#3a4d5e">MFS Score</text>
+  <text x="723" y="157" text-anchor="middle" font-size="14" fill="#ef8354" font-weight="700">78</text>
+  <text x="734" y="156" font-size="8" fill="#3a4d5e">/100</text>
+
+  <!-- Divider -->
+  <line x1="572" y1="178" x2="740" y2="178" stroke="#1e2840" stroke-width="1"/>
+
+  <!-- Sources -->
+  <text x="572" y="194" font-size="8.5" fill="#3a4d5e" letter-spacing="1">FONTES</text>
+
+  <rect x="572" y="198" width="186" height="18" rx="3" fill="#080c14"/>
+  <circle cx="585" cy="207" r="4" fill="#ef8354" fill-opacity="0.25"/>
+  <rect x="597" y="203" width="90" height="5" rx="2" fill="#1a2535"/>
+  <text x="735" y="210" text-anchor="middle" font-size="9" fill="#ef8354">1.2 ★</text>
+
+  <rect x="572" y="220" width="186" height="18" rx="3" fill="#080c14"/>
+  <circle cx="585" cy="229" r="4" fill="#38d4f0" fill-opacity="0.25"/>
+  <rect x="597" y="225" width="73" height="5" rx="2" fill="#1a2535"/>
+  <text x="735" y="232" text-anchor="middle" font-size="9" fill="#38d4f0">8.5 ★</text>
+
+  <rect x="572" y="242" width="186" height="18" rx="3" fill="#080c14"/>
+  <circle cx="585" cy="251" r="4" fill="#38d4f0" fill-opacity="0.25"/>
+  <rect x="597" y="247" width="110" height="5" rx="2" fill="#1a2535"/>
+  <text x="735" y="254" text-anchor="middle" font-size="9" fill="#38d4f0">7.8 ★</text>
+
+  <!-- Red flags -->
+  <text x="572" y="274" font-size="8.5" fill="#3a4d5e" letter-spacing="1">SINAIS DE ALERTA</text>
+
+  <rect x="572" y="279" width="62" height="16" rx="8" fill="#ef8354" fill-opacity="0.1" stroke="#ef8354" stroke-width="0.75" stroke-opacity="0.65"/>
+  <text x="603" y="291" text-anchor="middle" font-size="8" fill="#ef8354">Emocional</text>
+
+  <rect x="639" y="279" width="48" height="16" rx="8" fill="#ef8354" fill-opacity="0.1" stroke="#ef8354" stroke-width="0.75" stroke-opacity="0.65"/>
+  <text x="663" y="291" text-anchor="middle" font-size="8" fill="#ef8354">Urgência</text>
+
+  <rect x="692" y="279" width="55" height="16" rx="8" fill="#a78bfa" fill-opacity="0.1" stroke="#a78bfa" stroke-width="0.75" stroke-opacity="0.65"/>
+  <text x="719" y="291" text-anchor="middle" font-size="8" fill="#a78bfa">Sem fonte</text>
+
+  <!-- Share-safe block -->
+  <rect x="572" y="304" width="186" height="56" rx="6" fill="#080c14" stroke="#1e2840" stroke-width="1"/>
+  <text x="582" y="319" font-size="8" fill="#3a4d5e">Resumo seguro para compartilhar</text>
+  <rect x="582" y="325" width="157" height="5" rx="2" fill="#1a2535"/>
+  <rect x="582" y="334" width="128" height="5" rx="2" fill="#1a2535"/>
+  <rect x="582" y="343" width="142" height="5" rx="2" fill="#1a2535" fill-opacity="0.5"/>
+
+  <!-- Bottom label -->
+  <text x="400" y="416" text-anchor="middle" font-size="9" fill="#263545" letter-spacing="2">4 MODOS · 11 ETAPAS · MULTI-IDIOMA</text>
+</svg>
