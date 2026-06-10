@@ -27,6 +27,7 @@ Idioma de todo o conteúdo: **português (PT-BR)**.
 
 ## Convenções
 
+- **Idioma:** todo conteúdo visível (exemplos práticos, dicas, comentários, seções) deve estar em **PT-BR** por padrão. Só usar inglês se o usuário pedir explicitamente ou se o conteúdo for inerentemente em inglês (nomes de API, slugs de comando, termos técnicos sem tradução consagrada).
 - Slug em kebab-case, igual ao nome da pasta sugerida na instalação (ex.: `prompt-improver`).
 - Não adicionar frameworks, bundlers ou dependências — o site deve continuar funcionando abrindo o HTML direto.
 - Os exemplos de "Uso na prática" devem ser concretos (comandos reais), não genéricos.
