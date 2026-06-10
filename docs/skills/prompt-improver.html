@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prompt Improver — Claude Skills</title>
+  <meta name="description" content="Skill que avalia a clareza dos seus prompts no Claude Code e faz perguntas estruturadas quando estão vagos, antes de executar.">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>✦</text></svg>">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="../index.html">
+        <span class="spark">✦</span>
+        claude-skills<span class="tld">.catalog</span>
+      </a>
+      <nav class="header-nav">
+        <a href="../index.html#skills" class="nav-label">Skills</a>
+        <a class="btn-gh" href="https://github.com/SamuelASantos/claude-skills" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+          GitHub
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <nav class="breadcrumb">
+        <a href="../index.html">← Voltar ao catálogo</a>
+      </nav>
+
+      <!-- Nome + Resumo -->
+      <section class="skill-hero">
+        <div>
+          <h1><span class="grad">Prompt Improver</span></h1>
+          <p class="summary">
+            Avalia automaticamente a clareza dos seus prompts no Claude Code. Quando um prompt
+            está vago, a skill pesquisa o contexto do projeto e faz de 1 a 6 perguntas
+            estruturadas antes de executar — transformando "vibes" em instruções precisas.
+          </p>
+          <div class="badges">
+            <span class="badge accent">✦ por severity1</span>
+            <span class="badge violet">Claude Code 2.0.22+</span>
+            <span class="badge cyan">~189 tokens/prompt</span>
+            <span class="badge">Licença MIT</span>
+          </div>
+        </div>
+        <div class="art">
+          <img src="../assets/img/prompt-improver.svg" alt="Ilustração: um prompt vago sendo refinado pela skill em contexto claro e estruturado">
+        </div>
+      </section>
+
+      <!-- Download -->
+      <section class="section" id="download">
+        <h2><span class="num">↓</span> Baixar e instalar</h2>
+        <p>Instalação <strong>global</strong> (disponível em todos os seus projetos):</p>
+        <div class="code-block">
+          <div class="code-head">
+            <span>bash · instalação global</span>
+            <button class="copy-btn">⧉ Copiar</button>
+          </div>
+          <pre>git clone https://github.com/severity1/claude-code-prompt-improver.git ~/.claude/skills/prompt-improver</pre>
+        </div>
+
+        <p>Ou instalação <strong>apenas no projeto atual</strong> (execute na raiz do projeto):</p>
+        <div class="code-block">
+          <div class="code-head">
+            <span>bash · instalação no projeto</span>
+            <button class="copy-btn">⧉ Copiar</button>
+          </div>
+          <pre>git clone https://github.com/severity1/claude-code-prompt-improver.git .claude/skills/prompt-improver</pre>
+        </div>
+
+        <div class="callout">
+          <span class="ico">💡</span>
+          <span>No <strong>Windows</strong>, o <code>~</code> equivale a <code>%USERPROFILE%</code>
+          (ex.: <code>C:\Users\seu-usuario\.claude\skills\prompt-improver</code>).
+          Após instalar, reinicie o Claude Code para a skill ser carregada.</span>
+        </div>
+
+        <a class="source-link" href="https://github.com/severity1/claude-code-prompt-improver" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+          Repositório original no GitHub
+        </a>
+      </section>
+
+      <!-- Funcionalidades -->
+      <section class="section" id="funcionalidades">
+        <h2><span class="num">⚙</span> Funcionalidades</h2>
+        <p>
+          A skill funciona por meio de <strong>hooks</strong> que interceptam o fluxo do Claude Code em
+          três momentos: quando você envia um prompt (<code>UserPromptSubmit</code>), antes de
+          ferramentas serem executadas (<code>PreToolUse</code>) e quando subagentes iniciam
+          (<code>SubagentStart</code>). Se o prompt é claro, nada muda — ele segue direto.
+          Se é vago, a skill entra em ação: pesquisa o projeto, reúne contexto e devolve
+          perguntas objetivas com opções estruturadas (via <code>AskUserQuestion</code>).
+        </p>
+        <p>Internamente, um motor declarativo em Python aplica <strong>9 "nudges"</strong> (orientações contextuais) de forma seletiva:</p>
+
+        <div class="feature-grid">
+          <div class="feature">
+            <h4><code>improve</code></h4>
+            <p>Verifica a clareza do prompt e só questiona quando ele é genuinamente vago.</p>
+          </div>
+          <div class="feature">
+            <h4><code>approach-assessment</code></h4>
+            <p>Em tarefas não triviais, sugere a melhor estratégia (subagente vs. orquestração).</p>
+          </div>
+          <div class="feature">
+            <h4><code>workflow</code></h4>
+            <p>Detecta trabalho multi-etapas e recomenda planejamento antes de começar.</p>
+          </div>
+          <div class="feature">
+            <h4><code>plan-mode</code></h4>
+            <p>Avalia se a tarefa justifica entrar em modo de plano antes de codificar.</p>
+          </div>
+          <div class="feature">
+            <h4><code>plan</code></h4>
+            <p>Formata planos de forma legível e testável.</p>
+          </div>
+          <div class="feature">
+            <h4><code>ask-user-question</code></h4>
+            <p>Roteia decisões que são realmente do usuário para perguntas estruturadas.</p>
+          </div>
+          <div class="feature">
+            <h4><code>output-readability</code></h4>
+            <p>Em entregas longas, prioriza clareza e legibilidade do resultado.</p>
+          </div>
+          <div class="feature">
+            <h4><code>background-exec</code></h4>
+            <p>Sugere executar comandos de longa duração em segundo plano.</p>
+          </div>
+          <div class="feature">
+            <h4><code>subagent-routing</code></h4>
+            <p>Encoraja relatórios concisos em agentes de pesquisa.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dicas -->
+      <section class="section" id="dicas">
+        <h2><span class="num">★</span> Dicas</h2>
+        <ul class="tip-list">
+          <li><span class="ico">⚡</span><span><strong>Precisa pular a avaliação?</strong> Comece o prompt com <code>*</code> (ex.: <code>* add dark mode</code>) e a skill é ignorada naquela execução. Comandos iniciados com <code>/</code> também passam direto.</span></li>
+          <li><span class="ico">🪙</span><span><strong>Custo quase zero em prompts claros:</strong> a avaliação consome ~189 tokens por prompt; a skill completa só é carregada sob demanda, quando o prompt é vago.</span></li>
+          <li><span class="ico">🎯</span><span><strong>Quanto mais contexto, menos perguntas:</strong> cite arquivo, linha e comportamento esperado no prompt e a skill nem precisa intervir.</span></li>
+          <li><span class="ico">🧩</span><span><strong>Requer Claude Code 2.0.22 ou superior</strong>, pois depende da ferramenta <code>AskUserQuestion</code> para as perguntas estruturadas.</span></li>
+          <li><span class="ico">🔧</span><span><strong>Personalizável:</strong> os nudges são arquivos JSON (<code>nudges/*.json</code>) lidos por um motor declarativo — dá para ajustar ou desativar comportamentos individualmente.</span></li>
+        </ul>
+      </section>
+
+      <!-- Uso na prática -->
+      <section class="section" id="uso">
+        <h2><span class="num">▶</span> Uso na prática</h2>
+        <p>O dia a dia com a skill é transparente: você só percebe que ela existe quando ela evita um retrabalho. Compare:</p>
+
+        <div class="example-pair">
+          <div class="vague">
+            <div class="label">⚠ Prompt vago → skill intervém</div>
+            <div class="code-block">
+              <div class="code-head"><span>terminal</span><button class="copy-btn">⧉ Copiar</button></div>
+              <pre>claude "fix the error"
+
+<span class="cm"># A skill pesquisa o projeto e pergunta:</span>
+<span class="cm"># "Qual erro você quer corrigir?"</span>
+<span class="cm">#  ◉ TypeError em Map.tsx:127</span>
+<span class="cm">#  ◯ Warning de build no webpack</span>
+<span class="cm">#  ◯ Outro…</span></pre>
+            </div>
+          </div>
+          <div class="clear">
+            <div class="label">✔ Prompt claro → executa direto</div>
+            <div class="code-block">
+              <div class="code-head"><span>terminal</span><button class="copy-btn">⧉ Copiar</button></div>
+              <pre>claude "Fix TypeError in src/components/Map.tsx
+line 127 where mapboxgl.Map constructor is
+missing container option"
+
+<span class="cm"># Sem perguntas — processa imediatamente.</span></pre>
+            </div>
+          </div>
+        </div>
+
+        <p>E quando você quiser improvisar de propósito, sem interrupções:</p>
+        <div class="code-block">
+          <div class="code-head"><span>terminal · bypass</span><button class="copy-btn">⧉ Copiar</button></div>
+          <pre>claude "* add dark mode"   <span class="cm"># o * pula a avaliação da skill</span></pre>
+        </div>
+
+        <div class="callout">
+          <span class="ico">🎓</span>
+          <span><strong>Quando essa skill brilha:</strong> projetos grandes onde "conserta o bug" pode
+          significar dez coisas diferentes. As perguntas estruturadas custam segundos e evitam que o
+          Claude gaste minutos (e tokens) resolvendo o problema errado.</span>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>✦ claude-skills · <span data-year></span></span>
+      <span>Feito com <a href="https://claude.com/claude-code" target="_blank" rel="noopener">Claude Code</a> · <a href="https://github.com/SamuelASantos/claude-skills" target="_blank" rel="noopener">Contribua no GitHub</a></span>
+    </div>
+  </footer>
+
+  <script src="../assets/site.js"></script>
+</body>
+</html>

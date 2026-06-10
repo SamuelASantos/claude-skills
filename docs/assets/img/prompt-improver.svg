@@ -1,0 +1,125 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e1220"/>
+      <stop offset="1" stop-color="#0a0d14"/>
+    </linearGradient>
+    <radialGradient id="glowV" cx="0.5" cy="0.45" r="0.5">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ef8354"/>
+      <stop offset="0.5" stop-color="#c084fc"/>
+      <stop offset="1" stop-color="#38d4f0"/>
+    </linearGradient>
+    <linearGradient id="prism" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c084fc"/>
+      <stop offset="1" stop-color="#7c5cf0"/>
+    </linearGradient>
+    <linearGradient id="arrowL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fbbf24" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="arrowR" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c084fc"/>
+      <stop offset="1" stop-color="#38d4f0"/>
+    </linearGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <!-- fundo -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <g fill="#2a3454" opacity="0.5">
+    <circle cx="60" cy="50" r="1.6"/><circle cx="160" cy="90" r="1.6"/><circle cx="90" cy="170" r="1.6"/>
+    <circle cx="240" cy="40" r="1.6"/><circle cx="320" cy="110" r="1.6"/><circle cx="60" cy="300" r="1.6"/>
+    <circle cx="150" cy="390" r="1.6"/><circle cx="300" cy="410" r="1.6"/><circle cx="430" cy="60" r="1.6"/>
+    <circle cx="540" cy="40" r="1.6"/><circle cx="660" cy="80" r="1.6"/><circle cx="740" cy="160" r="1.6"/>
+    <circle cx="700" cy="330" r="1.6"/><circle cx="600" cy="400" r="1.6"/><circle cx="470" cy="390" r="1.6"/>
+    <circle cx="760" cy="50" r="1.6"/><circle cx="380" cy="30" r="1.6"/>
+  </g>
+  <ellipse cx="400" cy="220" rx="260" ry="180" fill="url(#glowV)"/>
+
+  <!-- janela esquerda: prompt vago -->
+  <g>
+    <rect x="48" y="120" width="240" height="180" rx="14" fill="#141a2a" stroke="#232d47" stroke-width="1.5"/>
+    <rect x="48" y="120" width="240" height="36" rx="14" fill="#1a2236"/>
+    <rect x="48" y="142" width="240" height="14" fill="#1a2236"/>
+    <circle cx="70" cy="138" r="5" fill="#f87171"/>
+    <circle cx="88" cy="138" r="5" fill="#fbbf24"/>
+    <circle cx="106" cy="138" r="5" fill="#4ade80"/>
+    <text x="168" y="143" fill="#6b7795" font-size="11" text-anchor="middle">prompt vago</text>
+
+    <text x="70" y="190" fill="#9aa6c0" font-size="15" font-family="Consolas, monospace">&gt; fix the error</text>
+    <!-- rabisco de incerteza -->
+    <path d="M70 202 q6 6 12 0 t12 0 t12 0 t12 0 t12 0 t12 0 t12 0 t12 0 t12 0" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+    <text x="70" y="240" fill="#475270" font-size="13" font-family="Consolas, monospace">qual erro?</text>
+    <text x="70" y="262" fill="#475270" font-size="13" font-family="Consolas, monospace">qual arquivo?</text>
+    <!-- balão de dúvida -->
+    <circle cx="262" cy="186" r="15" fill="#1a2236" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="262" y="192" fill="#fbbf24" font-size="16" font-weight="700" text-anchor="middle">?</text>
+  </g>
+
+  <!-- seta esquerda -->
+  <g stroke="url(#arrowL)" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M300 210 H352"/>
+    <path d="M344 200 l10 10 l-10 10"/>
+  </g>
+
+  <!-- prisma central: a skill -->
+  <g>
+    <circle cx="400" cy="210" r="52" fill="#a78bfa" opacity="0.25" filter="url(#soft)"/>
+    <g transform="rotate(45 400 210)">
+      <rect x="368" y="178" width="64" height="64" rx="14" fill="url(#prism)" stroke="#d9c9ff" stroke-width="1.5"/>
+    </g>
+    <!-- faísca -->
+    <path d="M400 186 l7 17 l17 7 l-17 7 l-7 17 l-7 -17 l-17 -7 l17 -7 z" fill="#ffffff"/>
+    <circle cx="424" cy="190" r="3" fill="#ffffff" opacity="0.9"/>
+    <circle cx="378" cy="232" r="2.4" fill="#ffffff" opacity="0.7"/>
+    <text x="400" y="296" fill="#a78bfa" font-size="13" font-weight="600" text-anchor="middle" letter-spacing="2">PROMPT IMPROVER</text>
+  </g>
+
+  <!-- seta direita -->
+  <g stroke="url(#arrowR)" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M448 210 H500"/>
+    <path d="M492 200 l10 10 l-10 10"/>
+  </g>
+
+  <!-- janela direita: prompt refinado -->
+  <g>
+    <rect x="512" y="100" width="240" height="220" rx="14" fill="#141a2a" stroke="#31407a" stroke-width="1.5"/>
+    <rect x="512" y="100" width="240" height="36" rx="14" fill="#1a2236"/>
+    <rect x="512" y="122" width="240" height="14" fill="#1a2236"/>
+    <circle cx="534" cy="118" r="5" fill="#f87171"/>
+    <circle cx="552" cy="118" r="5" fill="#fbbf24"/>
+    <circle cx="570" cy="118" r="5" fill="#4ade80"/>
+    <text x="632" y="123" fill="#38d4f0" font-size="11" text-anchor="middle">contexto claro</text>
+
+    <!-- linhas de checklist -->
+    <g font-family="Consolas, monospace" font-size="13">
+      <rect x="534" y="156" width="16" height="16" rx="4" fill="none" stroke="#4ade80" stroke-width="1.6"/>
+      <path d="M537 164 l4 4 l7 -8" stroke="#4ade80" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <text x="560" y="169" fill="#d6e2f5">TypeError em Map.tsx</text>
+
+      <rect x="534" y="186" width="16" height="16" rx="4" fill="none" stroke="#4ade80" stroke-width="1.6"/>
+      <path d="M537 194 l4 4 l7 -8" stroke="#4ade80" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <text x="560" y="199" fill="#d6e2f5">linha 127, constructor</text>
+
+      <rect x="534" y="216" width="16" height="16" rx="4" fill="none" stroke="#4ade80" stroke-width="1.6"/>
+      <path d="M537 224 l4 4 l7 -8" stroke="#4ade80" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <text x="560" y="229" fill="#d6e2f5">falta option container</text>
+    </g>
+
+    <!-- barra de progresso -->
+    <rect x="534" y="258" width="196" height="8" rx="4" fill="#1a2236"/>
+    <rect x="534" y="258" width="196" height="8" rx="4" fill="url(#grad)"/>
+    <text x="534" y="292" fill="#6b7795" font-size="12">pronto para executar</text>
+    <circle cx="722" cy="288" r="11" fill="rgba(74,222,128,0.12)" stroke="#4ade80" stroke-width="1.5"/>
+    <path d="M717 288 l3.5 3.5 l6 -7" stroke="#4ade80" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- legenda inferior -->
+  <text x="400" y="412" fill="#475270" font-size="13" text-anchor="middle" font-style="italic">type vibes, ship precision</text>
+</svg>

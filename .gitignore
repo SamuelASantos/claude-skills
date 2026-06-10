@@ -1,0 +1,6 @@
+# Configurações locais do Claude Code
+.claude/
+
+# Sistema
+Thumbs.db
+.DS_Store
